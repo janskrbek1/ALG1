@@ -23,9 +23,28 @@ public class Trojuhelnik {
         double y = sc.nextDouble();
         double z = sc.nextDouble();
         
-        if (x + y == z || x + z == y || y + z == x) {
-            System.out.println("Nelze sestrojit trojuhelnik.");
+        if (x <= 0 || y <= 0 || z <= 0) {
+            System.out.println("Byla zadana zaporna cisla.");
+            return;
         }
+        
+        if (x + y <= z || Math.abs(x - y) >= z) {
+            System.out.println("Nelze sestrojit trojuhelnik.");
+            return;
+        }
+        
+        // vypocet plochy a obvodu
+        double o = x + y + z;
+        // double s = (x * vx) / 2;
+        
+        // priradit delky do promennych a, b, c tak, aby a <= b <= c
+        
+        
+        // urcit typ dle delek stran – rovnostranny, rovnoramenny, obecny
+        
+        // urcit typ dle uhlu – pravouhly, tupouhly, ostrouhly (lze pomoci Pythagorovy vety)
+        
+        
     }
     
 }
