@@ -13,7 +13,27 @@ package cv09;
  */
 public final class MatrixTools {
 
-    private MatrixTools() {
-        
+    private MatrixTools() {}
+    
+    /**
+     * Soucet matic.
+     * @param a prvni matice
+     * @param b druha matice
+     * @return soucet matic nebo null, nelze-li soucet vypocitat
+     */
+    public static double[][] soucetMatic (double[][] a, double[][] b) {
+        return null;
     }
+    
+    /**
+     * Soucin matic.
+     * @param a prvni matice
+     * @param b druha matice
+     * @return soucin matic nebo null, nelze-li soucin vypocitat
+     */
+    public static double[][] soucinMatic (double[][] a, double[][] b) {
+        return null;
+    }
+    
+    
 }
