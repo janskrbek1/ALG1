@@ -25,15 +25,30 @@ public class VypisCisel {
         System.out.println("Zadej pocet cisel na radce");
         int pr = sc.nextInt();
         
-        int j = 0;
+        int pocMist;
+        if (a >= 0) pocMist = pocetCifer(b);
+        else pocMist = pocetCifer(a);
+        String fmt = String.format("%%%dd", pocMist);
+        
+        int cnt = 0;
         for (int i = a; i <= b; i++) {
             if (i % del == 0) {
-                j++;
-                if (j % pr == 0) System.out.println(i);
-                else System.out.print(i + " ");
+                cnt++;
+                if (cnt % pr == 0) {
+                    System.out.format(fmt,i);
+                    System.out.println();
+                }
+                else {
+                    System.out.format(fmt,i);
+                    System.out.print(" ");
+                }
             }
         }
         System.out.println();
     }
     
+    private static int pocetCifer (int cislo) {
+        String tmp = Integer.toString(cislo);
+        return tmp.length();
+    }
 }
