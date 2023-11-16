@@ -25,9 +25,7 @@ public class VypisCisel {
         System.out.println("Zadej pocet cisel na radce");
         int pr = sc.nextInt();
         
-        int pocMist;
-        if (a >= 0) pocMist = pocetCifer(b);
-        else pocMist = pocetCifer(a);
+        int pocMist = Math.max(pocetCifer(a),pocetCifer(b));
         String fmt = String.format("%%%dd", pocMist);
         
         int cnt = 0;
