@@ -20,4 +20,27 @@ public class StringTools {
         }
         return true;
     }
+    
+    private static char[] cifry = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+    public static long prevodDoDesitkove(String cislo, byte zaklad) {
+        
+    }
+    
+    public static String prevodZDesitkove(long cislo, byte zaklad) {
+        
+    }
+    
+    /**
+     * Sifrovani textu, sifrovat pouze pismena anglicke abecedy
+     * @param text Sifrovany text
+     * @param heslo Textovy retezec obsahujici pouze pismena anglicke abecedy
+     * @return 
+     */
+    public static String sifruj(String text, String heslo){
+        
+    }
+    
+    public static String desifruj(String text, String heslo){
+        
+    }
 }
