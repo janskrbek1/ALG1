@@ -18,7 +18,8 @@ public class StringTest {
     public static void main(String[] args) {
         String text;
         while((text = sc.nextLine()).length() > 0) {
-            System.out.println(StringTools.jePalindrom(text));
+            System.out.println(StringTools.jePalindrom(text) + " " + text);
+            
         }
     }
     
